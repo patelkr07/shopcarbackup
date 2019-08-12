@@ -11,6 +11,7 @@ function NavBar() {
             </Link>
             <div>
                 <ul className="navbar-nav">
+
                     <li className="nav-item">
                         <Link
                         to="/"
@@ -23,26 +24,44 @@ function NavBar() {
                             About
                         </Link>
                     </li>
+
                     <li className="nav-item">
                         <Link
                           to="/research"
-                          className={window.location.pathname === "/research" ? "nav-link active" : "nav-link"}
+                          className={
+                              window.location.pathname === "/research" ? "nav-link active" : "nav-link"}
                           >
                               Research
-                              </Link>
-                              </li>
-                              <li className ="nav-item">
-                                  <Link
-                                  to="/buy"
-                                  className={window.location.pathname === "/buy" ? "nav-link active" : "nav-link"}
-                                  >
+                        </Link>
+                    </li>
+
+                    <li className ="nav-item">
+                        <Link
+                            to="/buy"
+                            className={
+                                window.location.pathname === "/buy" ? "nav-link active" : "nav-link"}
+                          >
                               Buy
-                          </Link>
+                        </Link>
+                    </li>
+
+                    <li className ="nav-item">
+                        <Link
+                            to="/media"
+                            className={
+                                window.location.pathname === "/media" ? "nav-link active" : "nav-link"}
+                          >
+                              Media
+                        </Link>
+                            
                     </li>
                 </ul>
             </div>
         </nav>
     );
-}
+
+                            }
+
+
 
 export default NavBar;
