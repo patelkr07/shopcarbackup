@@ -1,5 +1,5 @@
 import React from "react";
-import Thumbnail from "../Thumbnail";
+
 import { Container, Row, Col } from "../Grid";
 
 export function CarList({ children }) {
@@ -7,7 +7,6 @@ export function CarList({ children }) {
 }
 
 export function CarListItem({
-    thumbnail,
     heading,
     price,
     miles,
@@ -18,7 +17,7 @@ export function CarListItem({
             <Container>
                 <Row>
                     <Col size="xs-4 sm-2">
-                        <Thumbnail src={thumbnail} />
+                        
                     </Col>
                     <Col size="xs-8 sm-9">
                         <h2>{heading}</h2>

@@ -18,7 +18,7 @@ export function VideoListItem({
                 <Container>
                     <Row>
                         
-                        <Iframe url={"http://www.youtube.com/embed/"+ embedlink}
+                        <Iframe url={"https://www.youtube.com/embed/"+ embedlink}
                             width="600px"
                             height="450px"
                             />                
