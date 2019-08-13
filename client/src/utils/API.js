@@ -5,7 +5,7 @@ import axios from "axios";
 export default {
 
     getCar: function(query) {
-        return axios.get("http://marketcheck-prod.apigee.net/v1/search?api_key=" + process.env.REACT_APP_MARKETCHECK_KEY + "&make=" + query);
+        return axios.get("https://marketcheck-prod.apigee.net/v1/search?api_key=" + process.env.REACT_APP_MARKETCHECK_KEY + "&make=" + query);
 
     },
     
