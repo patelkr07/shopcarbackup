@@ -64,7 +64,8 @@ class Media extends Component {
                                             <VideoListItem
                                                 key={video.snippet.id}
                                                 title={video.snippet.title}
-                                                thumbnail={video.snippet.thumbnail}
+                                                thumbnail={video.snippet.thumbnails.high.url}
+                                                embedlink={video.id.videoId}
                                             />                                               
                                         )
                                     })}
