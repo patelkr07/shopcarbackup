@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 const axios = require("axios");
 const router = require("express").Router();
 
@@ -15,6 +13,5 @@ router.get("/cars", (req, res) => {
 })
 
 
-console.log(apiKey);
 
 module.exports = router;

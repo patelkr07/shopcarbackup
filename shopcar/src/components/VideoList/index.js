@@ -7,6 +7,7 @@ export function VideoList ({ children }) {
 }
 
 export function VideoListItem({
+    id,
     title,
     thumbnail,
     views
@@ -19,10 +20,12 @@ export function VideoListItem({
                             <Thumbnail src={thumbnail} />
                         </Col>
                         <Col size="xs-8 sm-9">
+                            <h3>{id}</h3>
                             <h3>{title}</h3>
                             <h3>{thumbnail}</h3>
                             <h3>{views}</h3>
                         </Col>
+                        
                     </Row>
                 </Container>
             </li>
