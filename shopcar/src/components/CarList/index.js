@@ -26,10 +26,10 @@ export function CarListItem({
                     </Col>
                     <Col size="xs-8 sm-9">
                         <h3>{id}</h3>
-                        <h3>{year}</h3>
-                        <h3>{make}</h3>
+                        <p>Year</p><h3>{year}</h3>
+                        <h3>Make{make}</h3>
                         <h3>{model}</h3>
-                        <h3>{price}</h3>
+                        <h3>${price}</h3>
                         <p>Mileage: {miles}</p>
                         <h3>{zip}</h3>
                         <a rel="noreferrer noopener" target="_blank" href={href}>

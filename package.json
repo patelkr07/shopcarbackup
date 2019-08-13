@@ -17,5 +17,7 @@
     "url": "https://github.com/patelkr07/ShopCar/issues"
   },
   "homepage": "https://github.com/patelkr07/ShopCar#readme",
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
 }
