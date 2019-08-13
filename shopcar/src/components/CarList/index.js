@@ -7,14 +7,10 @@ export function CarList({ children }) {
 }
 
 export function CarListItem({
-    thumbnail = "https://placehold.it/300x300",
-    id,
-    year,
-    make,
-    model,
+    thumbnail,
+    heading,
     price,
     miles,
-    zip,
     href
 }) {
     return (
@@ -25,13 +21,9 @@ export function CarListItem({
                         <Thumbnail src={thumbnail} />
                     </Col>
                     <Col size="xs-8 sm-9">
-                        <h3>{id}</h3>
-                        <p>Year</p><h3>{year}</h3>
-                        <h3>Make{make}</h3>
-                        <h3>{model}</h3>
+                        <h2>{heading}</h2>
                         <h3>${price}</h3>
-                        <p>Mileage: {miles}</p>
-                        <h3>{zip}</h3>
+                        <h3>Mileage: {miles}</h3>
                         <a rel="noreferrer noopener" target="_blank" href={href}>
                             View Car
                         </a>
