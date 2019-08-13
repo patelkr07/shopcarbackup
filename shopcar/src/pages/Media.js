@@ -62,9 +62,9 @@ class Media extends Component {
                                     {this.state.videos.map(video => {
                                         return (
                                             <VideoListItem
-                                                key={video.id}
-                                                title={video.title}
-                                                thumbnail={video.thumbnail}
+                                                key={video.snippet.id}
+                                                title={video.snippet.title}
+                                                thumbnail={video.snippet.thumbnail}
                                             />                                               
                                         )
                                     })}
