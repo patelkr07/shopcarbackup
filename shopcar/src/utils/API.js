@@ -10,7 +10,7 @@ export default {
     },
     
     getVideo: function(req, res) {
-        return axios.get("https://www.googleapis.com/youtube/v3/search?part=snippet&q=cars&key=", { params: req.query })
+        return axios.get("https://www.googleapis.com/youtube/v3/search?part=snippet&q=cars&key=" + process.env.REACT_APP_YOUTUBE_KEY, { params: req.query })
     }
 
 }
