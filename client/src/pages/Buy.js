@@ -87,6 +87,7 @@ class Buy extends Component {
                                                   miles={car.miles}
                                                   zip={car.zip}
                                                   href={car.vdp_url}
+                                                  thumbnail={car.media.photo_links[1]}
                                                 />
                                             )
                                         })}
